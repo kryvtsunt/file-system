@@ -11,7 +11,7 @@ sub mount {
 }
 
 sub unmount {
-    system("(make unmount 2>&1) >> test.log");
+   system("(make unmount 2>&1) >> test.log");
 }
 
 sub write_text {

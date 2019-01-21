@@ -1,0 +1,34 @@
+
+Sahaj Kumar, Tim Kryvstun
+
+Hello and welcome to our (attempt at a) file system.
+
+Here is a brief overview of what we designed, and what it supports:
+- a 1MB block. It contains offest values at the front,
+  two bitmaps follow representing availability of inodes and data
+  blocks, and then a series of inodes and data blocks
+- directory system that to support a network of directories
+  and files
+
+
+So this is what is working:
+- You can mount. (but not remount)
+- You can create files with different names
+- You can list files in the root directory.
+- You can read and write to files.
+- those files you wrote to, you can read the contents.
+- soft links
+- metadata
+
+Most of the functionality was implemented, but it's not working correctly.
+This is not working:
+- you can't delete files.
+- you can't create nested directories and delete them.
+etc.
+
+
+No additional functionality not asked for the assignment was implemented.
+The assignment's tasks were more than enough for us to handle :/
+
+
+
